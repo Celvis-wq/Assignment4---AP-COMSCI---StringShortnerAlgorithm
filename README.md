@@ -1,6 +1,6 @@
 # AP COMSCI - StringShortnerAlgorithm | Main.java
 # Version: 0.0.1
-# By: Celvis
+- By: Celvis
 
 ## Purpose:
 
