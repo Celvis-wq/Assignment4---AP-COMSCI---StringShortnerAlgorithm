@@ -1,5 +1,5 @@
 // AP COMSCI - StringShortnerAlgoritm : Main.java
-// By: Celvis
+// By: Celvis - Contact Discord @Celvis for any issues
 // Version: 0.0.1
 
 /*
