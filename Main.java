@@ -57,7 +57,7 @@ public class Main {
 
         // Algorithm 2
         int uniqueCharCount = 0; // uniqueCharCount variable
-        String shortenedMessage2 = "";
+        String shortenedMessage2 = ""; // shortenedMessage2 variable
 
         // count the number of unique characters
         for (char c : message.toCharArray()) {
