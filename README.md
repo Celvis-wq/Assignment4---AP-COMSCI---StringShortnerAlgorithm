@@ -1,4 +1,4 @@
-# AP COMSCI - StringShortnerAlgorithm | Main.java
+# Assignment 4 - AP COMSCI - StringShortnerAlgorithm | Main.java
 # Version: 0.0.1
 - By: Celvis
 
