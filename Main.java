@@ -1,9 +1,10 @@
 // AP COMSCI - StringShortnerAlgoritm : Main.java
 // By: Celvis - Contact Discord @Celvis for any issues
-// Version: 0.0.1
+// Version: 0.0.2
 
 /*
  * This is the 4th assignment for ProjectStem - 10/23/2023
+ * Latest update: 10/24/2023
  * Written By: Celvis
  * Please note: If you are taking this for your usage and the grading doesn't appear right, try removing "import java.io.IOException" and removing "throws IOException"
  */
@@ -25,27 +26,33 @@ public class Main {
         // Algorithm 1
         int vowelCount = 0; // vowelCount variable
         String shortenedMessage1 = ""; // shortened message
-        char prevChar = ' '; // previous character
         boolean isWordStart = true; // isWordStart variable
 
         // remove characters
-        for (char c : message.toCharArray()) {
+        for (int i = 0; i < message.length(); i++) {
+            char c = message.charAt(i);
+            // Check
             if ("aeiou".contains(String.valueOf(c))) {
+                // Check
                 if (isWordStart) {
                     shortenedMessage1 += c;
-                    isWordStart = false;
-                } else {
-                    vowelCount++;
                 }
+                vowelCount++; // increment vowelCount
             } else {
-                if (c == ' ' || c != prevChar) {
+                // Check
+                if (c != ' '
+                        && (i == 0 || message.charAt(i - 1) == ' '
+                                || "aeiou".contains(String.valueOf(message.charAt(i - 1))))
+                        || c != message.charAt(Math.max(0, i - 1))) {
                     shortenedMessage1 += c;
                 }
             }
+            // Check - bool
             if (c == ' ') {
                 isWordStart = true;
+            } else {
+                isWordStart = false;
             }
-            prevChar = c;
         }
 
         // Algorithm 1 output
@@ -61,10 +68,13 @@ public class Main {
 
         // count the number of unique characters
         for (char c : message.toCharArray()) {
+            // Check
             if (c != ' ' && shortenedMessage2.indexOf(c) == -1) {
-                uniqueCharCount++;
-                int charCount = 0;
+                uniqueCharCount++; // increment uniqueCharCount variable
+                int charCount = 0; // charCount
+
                 for (char d : message.toCharArray()) {
+                    // Check
                     if (c == d) {
                         charCount++;
                     }
