@@ -10,7 +10,7 @@
 ## FAQ:
 - Have latest version of Java
 - This program is part of my AP COMSCI class
-- Please note: Please note: If you are taking this for your usage and the grading doesn't appear right, try removing "import java.io.IOException" and removing "throws IOException"
+- Please note: If you are taking this for your usage and the grading doesn't appear right, try removing "import java.io.IOException" and removing "throws IOException"
 - Also note: I am not at fault if you get in trouble for using this. I had posted this for people to learn, I left the previous note for those who are incompetent and are using this for their assignment
 - Discord: Celvis - If you have any issues, please contact me here.
 
