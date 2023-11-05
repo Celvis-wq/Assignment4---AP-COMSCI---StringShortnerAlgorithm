@@ -35,4 +35,4 @@ Changes:
 5. The isWordStart variable works correctly now and is based on whether the current character is a space or not.
 
 TODO:
-1. Nothing at this current time
+1. Nothing at this current time.
