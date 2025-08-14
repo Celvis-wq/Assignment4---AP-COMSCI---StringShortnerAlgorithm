@@ -31,7 +31,7 @@
 Changes:
 1. Reworked Algorithm 1's logic and implementation. Alg1 logic works properly now. Read below for details ↓↓↓↓↓↓↓↓
 2. Before the condition for adding a character to the shortenedMessage1 was based on whether it appeared immediately after the same character, which was the incorrect logic. The new logic checks whether the character appears immediately after the same character and if not, adds it to the shortenedMessage1.
-3. I modified the condition for adding a character to shortenedMessage1 to consider whether the character is the first character of a word (i.e., it's preceded by a space or it's the first character of the message) or if it's a vowel. This ensures that only vowels at the start of words or the beginning of the message are retained.
+3. I modified the condition for adding a character to shortenedMessage1 to consider whether the character is the first character of a word (it's preceded by a space or it's the first character of the message) or if it's a vowel. This ensures that only vowels at the start of words or the beginning of the message are retained.
 5. The isWordStart variable works correctly now and is based on whether the current character is a space or not.
 
 TODO:
